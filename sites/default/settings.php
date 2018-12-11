@@ -778,4 +778,15 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
+//base de donnée de test
+$databases['default']['replica'][] = array(
+  'driver' => 'mysql',
+  'database' => 'drupal',
+  'username' => 'root',
+  'password' => '',
+  'host' => 'localhost',
+);
+
+
+
 $config_directories['sync'] = 'sites/default/files/config__HsM5m1Ounzl4fabdUV2I0fdqQ-z6I74lEXbkEB4MEJU-DaBo206L-_1ZiHlZ5hIAhawm220fA/sync';
