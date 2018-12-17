@@ -10,7 +10,7 @@ rgb-light: 192,39,60
 a {
   color: #246F8C;
 }
-a:hover,#046380
+a:hover,#046380;
 a:focus,
 a:active {
   color: ;
@@ -30,7 +30,7 @@ pre {
 }
 #header {
   background-color: #246F8C;
-  border-bottom-color: 236B86;
+  border-bottom-color: #236B86;
 }
 
 /* components: accordion */
