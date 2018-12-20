@@ -1,5 +1,5 @@
 body {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'FreightText ', sans-serif;
   font-size: 20px;
   line-height: 160%;
   color: #333;
@@ -85,7 +85,7 @@ ul.links.inline li {
 .main-header {
   background-size: cover;
   position: relative;
- background: url(../images/f16Hero.jpg) no-repeat;
+ background: url(../images/header_back.jpg) no-repeat;
 }
 
 .main-header nav {
