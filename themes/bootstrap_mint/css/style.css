@@ -1,8 +1,8 @@
 body {
-  font-family: 'FreightText ', sans-serif;
+  font-family: 'Freight Text Pro', Georgia, Times New Roman, Serif;
   font-size: 20px;
   line-height: 160%;
-  color: #333;
+  color:#000000;
   overflow-x: hidden;
   font-weight: 300;
 }
@@ -83,11 +83,13 @@ ul.links.inline li {
 }
 
 .main-header {
-  background-size: cover;
-  position: relative;
- background: url(../images/header_back.jpg) no-repeat;
+background-size: cover;
+position: relative;
+background: url(../images/f16Herogrand.jpg) ;
+background-color: #246F8C;
 }
 
+/*couleur du navbar*/
 .main-header nav {
   background: #fff;
   border: 0;
@@ -115,7 +117,7 @@ ul.links.inline li {
 .brand.logo {
   margin-right: 5px;
 }
-
+/*dimenssion du logo */
 .brand.logo img {
   width: 100px;
 }
