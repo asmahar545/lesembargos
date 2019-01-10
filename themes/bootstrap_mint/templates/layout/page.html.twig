@@ -97,7 +97,7 @@
           
           <!-- End slide second region -->
           
-		  </div>
+	</div>
         </div>
       </div>
 	  <!-- end: Container -->
@@ -107,11 +107,11 @@
   {% endif %}
 {% endif %}
 <!--Sliding Header Widget -->
-  <nav class="navbar topnav navbar-default" role="navigation">
+  <nav     class="navbar topnav navbar-default" role="navigation">
     <div class="container">
       <div class="row">
       <div class="navbar-header col-md-3">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
+        <button  type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -180,81 +180,7 @@
       <br>
       <br>
 
-  <div class="col-md-12">
-
-  <div class="col-md-4">
-  <span class=" fa-stack fa-5x has-badge" data-count="3">
-    <i class=" fa fa-circle fa-stack-2x"></i>
-    <i class="p3 fa fa-database fa-stack-1x fa-inverse" data-count="5"></i>
-  </span>
-  <br>
-  </br>
-     </br>
-  <p>
-  Ma base de données 
-  </p>
-  <p>
-  Elle fournit pour chaque entreprise une fiche-profil qui reprend les données administratives et relatives à l'actionnariat ainsi que sept indicateurs socio-économiques et financiers et des informations sur ses activités.
-  </p>
-</div>
-<div class="col-md-4">
-  <span class="p1 fa-stack fa-5x has-badge" data-count="3">
-    <i class="p2 fa fa-circle fa-stack-2x"></i>
-    <i  class="p3 fa fa-book fa-stack-1x fa-inverse" data-count="5"></i>
-  </span>
-  </br>
-  </br>
-  <p>
-Mes données détaillées
-  <p>
-</div>
-<div class="col-md-4">
-  <span class=" fa-stack fa-5x has-badge" data-count="3">
-    <i class=" fa fa-circle fa-stack-2x"></i>
-    <i  class="p3 fa fa-search fa-stack-1x fa-inverse" data-count="5"></i>
-  </span>
-
-  </br>
-     </br>
-  <p>
-  Recherche facile
-  <p>
-</div>
-</div>
-
-
-<div class="col-md-12">
-<div class="col-md-4">
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwi3xLLtkNzfAhWCa1AKHUHVCQcQjRx6BAgBEAU&url=https%3A%2F%2Fwww.mondassur.com%2Fes%2Fexpatriation%2Fquelle-assurance-sante-expatrie-par-pays.html&psig=AOvVaw0zYFn_0BrnI6QzIiDsPHjw&ust=1546966300586792" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Nomnre de pays</h5>
-    <p class="card-text">Arménie,...,...</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwi3xLLtkNzfAhWCa1AKHUHVCQcQjRx6BAgBEAU&url=https%3A%2F%2Fwww.mondassur.com%2Fes%2Fexpatriation%2Fquelle-assurance-sante-expatrie-par-pays.html&psig=AOvVaw0zYFn_0BrnI6QzIiDsPHjw&ust=1546966300586792" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Organisations</h5>
-    <p class="card-text">ONE, UE, LEA,...</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">...</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-</div>
-</div>
+  
 <div class="col-md-12">
  {{ page.highlighted }}
  </div>
@@ -368,10 +294,88 @@ Mes données détaillées
       <!---End Left Sidebar -->
 
       <!--- Start content -->
+
       {% if page.content %}
           <div class="{{contentlayout}} content-layout">
             {{ page.content }}
+            {% if is_front  %} 
+          <div class="col-md-12">
+
+     <div class="col-md-4">
+  <span class=" fa-stack fa-5x has-badge" data-count="3">
+    <i class=" fa fa-circle fa-stack-2x"></i>
+    <i class="p3 fa fa-database fa-stack-1x fa-inverse" data-count="5"></i>
+  </span>
+  
+  <p>
+
+Ces bases de données sont régulièrement vérifiées, enrichies et mises à jour.
+Pour être tenu informé des mises à jour majeures, abonnez-vous au GRIP Update.
+  </p>
+  
+</div>
+<div class="col-md-4">
+  <span class="p1 fa-stack fa-5x has-badge" data-count="3">
+    <i class="p2 fa fa-circle fa-stack-2x"></i>
+    <i  class="p3 fa fa-book fa-stack-1x fa-inverse" data-count="5"></i>
+  </span>
+
+  <p>
+Couvre tous les embargos mis en place depuis 2000 ou déjà en cours en 2000. 
+  <p>
+</div>
+<div class="col-md-4">
+  <span class=" fa-stack fa-5x has-badge" data-count="3">
+    <i class=" fa fa-circle fa-stack-2x"></i>
+    <i  class="p3 fa fa-search fa-stack-1x fa-inverse" data-count="5"></i>
+  </span>
+
+  
+  <p>
+Les organisations ayant dicté des mesures d’embargo depuis cette période sont l’ONU, la Communauté économique des États d’Afrique de l’Ouest (CEDEAO), la Ligue des États arabes (LEA), 
+l’Organisation de sécurité et de coopération en Europe (OSCE), l’Union africaine (UA) et l’Union européenne (UE).
+  
+  
+  <p>
+</div>
+</div>
+
+<!--
+<div class="col-md-12">
+<div class="col-md-4">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="https://www.populationdata.net/wp-content/uploads/monde-politique.gif" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Nombre  de pays</h5>
+    <p class="card-text">Arménie,...,...</p>
+    <a href="http://localhost/drupal-8.6.3/fr/viewslist" class="btn btn-primary">Plus d'infos</a>
+  </div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="https://pngimage.net/wp-content/uploads/2018/06/icono-buscar-png-9.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">...</h5>
+    <p class="card-text">Recherche</p>
+    <a href="#" class="btn btn-primary">Plus d'infos</a>
+  </div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="https://www.chea.org/sites/default/files/2018-04/Institutions1_0.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Organisations</h5>
+    <p class="card-text">ONE, UE, LEA,...</p>
+    <a href="#" class="btn btn-primary">Plus d'infos</a>
+  </div>
+</div>
+</div>
+</div>-->
           </div>
+      {% endif %}
       {% endif %}
       <!---End content -->
 
@@ -389,9 +393,12 @@ Mes données détaillées
 
     <!--Start Content Bottom-->
     {% if page.content_bottom %}
+        
     <div class="content-bottom">
         <div class="row">
 		  <div class="col-md-12">
+                      
+   
             {{ page.content_bottom }}
 		  </div>
         </div>
@@ -459,6 +466,7 @@ Mes données détaillées
       <div class="container">
         <div class="row">
           <div class="col-md-12">
+              
             {{ page.footer }}
           </div>
       </div>
@@ -474,6 +482,11 @@ Mes données détaillées
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
+            
+            <div class="panel panel-default">
+  <div class="panel-body">Panel Content</div>
+  <div class="panel-footer">Panel Footer</div>
+</div>
           {{ page.footer_menu }}
         </div>
         {% if show_social_icon %}
@@ -506,7 +519,34 @@ Mes données détaillées
 
 <!-- #footer-bottom -->
 <div id="footer-bottom">
+    {% if is_front %}
+    <div style="background-color: #246F8C;" class="panel-body">
+        <div class="col-lg-12">
+        
+            <div style="color: #ffffff;" class="col-lg-12">
+                <p>  
+<i>Profil des 71 entreprises représentatives du secteur de l'armement en Belgique en 2016
+
+71 entreprises représentatives du secteur de l'armement en Belgique en 2016
+
+Répertoire des entreprises du secteur de l'armement en Belgique en 2013</i>
+       
+<i>Profil des 71 entreprises représentatives du secteur de l'armement en Belgique en 2016
+
+71 entreprises représentatives du secteur de l'armement en Belgique en 2016
+
+Répertoire des entreprises du secteur de l'armement en Belgique en 2013</i></p>
+        </div>
+       </div>
+    </div>
+        {% endif  %}
+
+
+    <br>
+    <br>
+    <br> 
     <div class="container">
+        
          <div class="row">
 		 <hr class="style-mint">
          <div id="toTop" class="col-md-12">
@@ -514,8 +554,23 @@ Mes données détaillées
          </div>
         </div>
         <div class="row">
+            
         <div class="col-md-12 copy_credit">
-        <p class="copyright">Copyright &copy; {{ "now"|date("Y") }}. All rights reserved</p>
+        <p class="copyright">© Grip {{ "now"|date("Y") }} - Groupe de recherche et d'information sur la paix et la sécurité</p>
+        <div class="col-md-12 ">
+           <!--<div class="social-media">-->
+            
+              <a href="https://www.facebook.com/GRIP.1979"class="icon-facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+            
+              <a href="https://twitter.com/grip_org" class="icon-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+           
+              <a href="https://www.linkedin.com/company/grip" class="icon-linkedin" data-toggle="tooltip" data-placement="bottom" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+         
+           
+         
+       <!-- </div>-->
+            </div>
+       
         {% if show_credit_link %}
           <p class="credit">Theme for <a href="https://www.drupal.org/8" target="_blank">Drupal 8</a></p>
         {% endif %}

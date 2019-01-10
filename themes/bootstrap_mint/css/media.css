@@ -76,9 +76,10 @@
   .menu-base-theme .sm-nowrap > li > :not(ul) a {
     white-space: nowrap;
   }
+  //couleur extérieur du menu devenue à blanc 
 
   .menu-base-theme {
-    background: #2b82ac;
+    background: #fff;
   }
 
   .menu-base-theme a.current {
@@ -86,6 +87,7 @@
     color: white;
   }
 
+  
   .menu-base-theme a.disabled {
     background: #2b82ac;
     color: #a1d1e8;
@@ -282,6 +284,7 @@
     border-bottom: 1px solid #fff;
   }
 
+  //Couleur de menu de base  //
   .menu-base-theme a,
   .menu-base-theme a:hover,
   .menu-base-theme a:focus,
@@ -289,7 +292,7 @@
   .menu-base-theme a.highlighted {
     padding: 13px 24px;
     background: #246F8C;
-    color: #2b82ac;
+    color: #fff;
     font-weight: 500;
   }
 
