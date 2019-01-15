@@ -87,6 +87,13 @@ position: relative;
 background: url(../images/banniere_2.jpg) ;
 background-color: #246F8C;
 }
+div#imageembargo {
+    background-image: url(../images/pays.jpg);
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 700px;
+  
+}
 
 /*couleur du navbar*/
 .main-header nav {
