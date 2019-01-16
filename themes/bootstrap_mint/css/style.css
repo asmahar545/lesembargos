@@ -87,12 +87,42 @@ position: relative;
 background: url(../images/banniere_2.jpg) ;
 background-color: #246F8C;
 }
+
 div#imageembargo {
-    background-image: url(../images/pays.jpg);
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 700px;
   
+  background-image: url(../images/pays.jpg);
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 433px;
+  border: 0;
+  margin: 0;
+  position: relative;
+  z-index: 200;
+  min-height: auto;
+}
+div#communautefr {
+  
+  background-image: url(../images/logo_mini.png);
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 107px;
+  border: 0;
+  margin: 0;
+  position: relative;
+  z-index: 200;
+  min-height: auto;
+}
+div#communautewalonnie {
+  
+  background-image: url(../images/logowallonie.png);
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 205px;
+  border: 0;
+  margin: 0;
+  position: relative;
+  z-index: 200;
+  min-height: auto;
 }
 
 /*couleur du navbar*/
