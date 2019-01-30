@@ -292,7 +292,14 @@
           </div>
       {% endif %}
       <!---End Left Sidebar -->
-
+       
+       {% if language.getId() == 'fr' %}
+           <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les embargos sur les armes </h1
+            {% else %}
+           <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The arms embargoes</h1>
+             
+       {% endif %}  
+       
       <!--- Start content -->
 
     {% if page.content %}
@@ -589,7 +596,7 @@
     <div style="background-color: #246F8C;" class="panel-body">
         <div class="col-lg-12">
          
-            <div style="color: #ffffff;" class="col-lg-10">
+            <div style="color: #ffffff;" class="col-lg-9">
    {% if language.getId() == 'fr' %} 
        <br>
        
@@ -601,6 +608,7 @@
   Le GRIP, la Région wallonne et l’UNSCAR ne peuvent être tenus responsables 
   de l’utilisation qui en serait faite.   </i> </p>
   <p><i></i></p>
+     
   {% else %}
       <br>
       
@@ -622,6 +630,11 @@
             <div style="color: #ffffff;" class="col-lg-1">
                 
      <div id="communautewalonnie"> </div>
+     
+       </div>
+          <div style="color: #ffffff;" class="col-lg-1">
+                
+     <div id="unscarlogo"> </div>
      
        </div>
         </div>
