@@ -116,6 +116,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
+          
         </button>
         {% if page.header %}
           {{ page.header }}
@@ -294,9 +295,9 @@
       <!---End Left Sidebar -->
        {% if is_front  %}
        {% if language.getId() == 'fr' %}
-           <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Les embargos sur les armes </h1
+           <h1 class="text-center titrehome">Les embargos sur les armes </h1
             {% else %}
-           <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The arms embargoes</h1>
+           <h1 class="text-center titrehome" >The arms embargoes</h1>
              
        {% endif %}  
        {% endif %}  
@@ -310,7 +311,31 @@
     
         
     <div class="col-md-12">
-     <div class="col-md-4">
+        <div class="col-md-1">
+            
+        </div>
+        
+         <div class="col-md-4">
+  <span class=" fa-stack fa-5x has-badge" data-count="3">
+    <i class=" fa fa-circle fa-stack-2x"></i>
+    <i class="p3 fa fa-database fa-stack-1x fa-inverse" data-count="5"></i>
+  </span>
+  {% if language.getId() == 'fr' %}
+ <p>
+   
+    Cette base de données fournit un aperçu le plus actuel possible des régimes d’embargos sur les armes. 
+    L’information contenue est par conséquent régulièrement mise à jour, vérifiée et enrichie 
+ </p>
+ {% else %}
+ <p>
+    
+    This database aims to give an updated snapshot of the arms embargoes’ regimes. 
+    The information contained herein is therefore regularly updated, checked and supplemented.
+ </p>
+ {% endif %}
+  
+</div>
+     <div class="col-md-3">
     <span class=" fa-stack fa-5x has-badge" data-count="3">
     <i class=" fa fa-circle fa-stack-2x"></i>
     <i  class="p3 fa fa-book fa-stack-1x fa-inverse" data-count="5"></i>
@@ -325,22 +350,7 @@
   </p>
   {% endif %}
 </div>
-  <div class="col-md-4">
-  <span class=" fa-stack fa-5x has-badge" data-count="3">
-    <i class=" fa fa-circle fa-stack-2x"></i>
-    <i class="p3 fa fa-database fa-stack-1x fa-inverse" data-count="5"></i>
-  </span>
-  {% if language.getId() == 'fr' %}
- <p>
-    Cette base de données répertorie l’ensemble des embargos adoptés à partir de 2000 ou déjà en cours cette année-là. 
- </p>
- {% else %}
- <p>
-    This database covers all arms embargoes either decided from or already implemented as of 2000.
- </p>
- {% endif %}
-  
-</div>
+ 
     
 <div class="col-md-4">
     
@@ -361,48 +371,66 @@
    {% endif %} 
 </div>
 
+
 </div>
-   
+
+    <div class="row">
+        <div class="col-lg-12 ">
+           <div class="col-lg-1 ">
+                  </div>
+                  
+                  <div class="col-lg-11 ">
+              
+            {% if language.getId() == 'fr' %}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1 class="soustitrehome">Les embargos sur les armes en quelques chiffres :</h1>
+        {% else %}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1 class="soustitrehome">Key figures on arms embargoes :</h1>
+        {% endif %} 
+            </div>
+        </div>
+    </div>
 
     
    <!--chiffres embargos-->
     
   <div class="col-lg-12">
-  <div class="col-lg-6">
+       
+      <div class="col-lg-2"></div>
+  <div class="col-lg-5">
       <br>
-      
+    
  {% if language.getId() == 'fr' %}
-
+  
   <p>
-   <i><h1><b>22</b></h1></i> 
-   Nombre d’États ou territoires sous embargo  <br>
+   <i><h1><b>&nbsp;&nbsp;22</b></h1></i> 
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nombre d’États ou territoires sous embargo </p> <br>
   </p>
   <p>
-     <h1><b>5</b></h1>    
-      Nombre d’entités non-étatiques sous embargos <br>   
+     <h1><b>&nbsp;&nbsp;5</b></h1>    
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nombre d’entités non-étatiques sous embargos <br>   
   </p>
     <p>
-      <h1><b>6</b></h1>  
-      Nombre d’organisations mettant en œuvre un embargo <br>
+      <h1><b>&nbsp;&nbsp;6</b></h1>  
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nombre d’organisations mettant en œuvre un embargo <br>
  {% else %}
-   
+     
   <p>
-   <i><h1><b>22</b></h1></i> 
-     Number of States or territories currently under arms embargo
+   <i><h1><b>&nbsp;&nbsp;22</b></h1></i> 
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of States or territories currently under arms embargo
   </p>
    <p>
-     <h1><b>5</b></h1>    
-      Number of non-state entities currently under arms embargo   
+     <h1><b>&nbsp;&nbsp;5</b></h1>    
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Number of non-state entities currently under arms embargo   
   </p>
    
   <p>
-      <h1><b>6</b></h1>  
+      <h1><b>&nbsp;&nbsp;&nbsp;6</b></h1>  
    
-      Number of multilateral organizations implementing arms embargoes 
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Number of multilateral organizations implementing arms embargoes 
   </p>
    {% endif %}  
 </div>
-<div class="col-lg-6">
+<div class="col-lg-5">
     <br>
     <br>
   <div id="imageembargo"> </div>
@@ -551,48 +579,8 @@
 
 <!-- Start Footer Ribbon -->
 {% if page.footer_menu %}
-  <div class="footer-ribbon">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-            
-            <div class="panel panel-default">
-  <div class="panel-body">Panel Content</div>
-  <div class="panel-footer">Panel Footer</div>
-</div>
-      {{ page.footer_menu }}
-        </div>
-        {% if show_social_icon %}
-        <div class="col-sm-6">
-          <div class="social-media">
-            {% if facebook_url %}
-              <a href="{{ facebook_url }}" class="icon-facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
-            {% endif %}
-            {% if google_plus_url %}
-              <a href="{{ google_plus_url }}" class="icon-gplus" data-toggle="tooltip" data-placement="bottom" title="Google+"><i class="fa fa-google-plus"></i></a>
-            {% endif %}
-            {% if twitter_url %}
-              <a href="{{ twitter_url }}" class="icon-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
-            {% endif %}
-            {% if linkedin_url %}
-              <a href="{{ linkedin_url }}" class="icon-linkedin" data-toggle="tooltip" data-placement="bottom" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-            {% endif %}
-            {% if ytube_url %}
-              <a href="{{ ytube_url }}" class="icon-youtube" data-toggle="tooltip" data-placement="bottom" title="YouTube"><i class="fa fa-youtube-play"></i></a>
-            {% endif %}
-          </div>
-        </div>
-        {% endif %}
-      </div>
-    </div>
-  </div>
-{% endif %}
-<!-- End Footer Ribbon -->
-
-
-<!-- #footer-bottom -->
-<div id="footer-bottom">
-    {% if is_front %}
+    
+     {% if is_front %}
     <div style="background-color: #246F8C;" class="panel-body">
         <div class="col-lg-12">
          
@@ -640,6 +628,65 @@
         </div>
     </div>
         {% endif  %}
+  <div class="footer-ribbon">
+      <div style="background-color: #eee9e9;" class="panel-body">
+    
+         <div class="row">
+         <!-- <p style="color: #246F8C;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contactez le GRIP</p>
+         <a href="https://www.grip.org/fr/" style="color: #246F8C;">   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visitez le site du Grip</a>--->
+         </div>
+        
+      <div class="row">
+       
+          
+        <div class="col-lg-12">
+            <div class="col-lg-3"></div> 
+  
+        
+     
+        <div class="col-lg-5">
+       <p style="color: #246F8C;"class="copyright"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;© Grip {{ "now"|date("Y") }}  Groupe de recherche et d'information sur la paix et la sécurité</p>
+
+        </div>
+         {% if show_social_icon %}
+        <div class="col-lg-1">
+            
+            
+          <div class="social-media">
+               
+            {% if facebook_url %}
+              <a href="{{ facebook_url }}" class="icon-facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+            {% endif %}
+            
+            {% if twitter_url %}
+              <a href="{{ twitter_url }}" class="icon-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+            {% endif %}
+            {% if linkedin_url %}
+              <a href="{{ linkedin_url }}" class="icon-linkedin" data-toggle="tooltip" data-placement="bottom" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            {% endif %}
+           
+          </div>
+        </div>
+        {% endif %}
+         <div class="col-lg-3">
+            
+
+      {{ page.footer_menu }}
+       
+        </div>
+        
+        </div>
+      </div>
+    
+    </div>
+  </div>
+{% endif %}
+<!-- End Footer Ribbon -->
+
+
+<!-- #footer-bottom -->
+<div id="footer-bottom">
+   
 
 
     <br>
@@ -652,13 +699,13 @@
          <div id="toTop" class="col-md-12">
           <a class="scrollUp"><i class="fa fa-angle-up"></i></a>
          </div>
-        </div>
+        </div><!--
         <div class="row">
             
         <div class="col-md-12 copy_credit">
         <p class="copyright">© Grip {{ "now"|date("Y") }} - Groupe de recherche et d'information sur la paix et la sécurité</p>
         <div class="col-md-12 ">
-           <!--<div class="social-media">-->
+           <!--<div class="social-media">
             
               <a href="https://www.facebook.com/GRIP.1979"class="icon-facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
             
@@ -668,7 +715,7 @@
          
            
          
-       <!-- </div>-->
+        </div>-->
             </div>
        
         {% if show_credit_link %}

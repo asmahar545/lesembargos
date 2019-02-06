@@ -87,7 +87,16 @@ position: relative;
 background: url(../images/banniere_2.jpg) ;
 background-color: #246F8C;
 }
-
+.titrehome{ 
+    font-weight: bold ;
+    font-size:  250%;
+   
+}
+.soustitrehome{ 
+   text-decoration: underline;
+    font-size:  150%;
+   
+}
 div#unscarlogo {
   
   background-image: url(../images/unscar_logo.png);
