@@ -84,7 +84,7 @@ ul.links.inline li {
 .main-header {
 background-size: cover;
 position: relative;
-background: url(../images/banniere_2.jpg) ;
+background: url(../images/ban1.jpg) ;
 background-color: #246F8C;
 }
 .titrehome{ 
@@ -93,8 +93,8 @@ background-color: #246F8C;
    
 }
 .soustitrehome{ 
-   text-decoration: underline;
-    font-size:  150%;
+   
+   font-size:  150%;
    
 }
 div#unscarlogo {
@@ -327,7 +327,7 @@ div#communautewalonnie {
 
 .copy_credit .copyright,
 .copy_credit .credit {
-  margin: 10px;
+  margin: 50px;
 }
 
 /*Scroll Top*/

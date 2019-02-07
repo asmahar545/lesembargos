@@ -99,7 +99,7 @@
           
 	</div>
         </div>
-      </div>
+       </div>
 	  <!-- end: Container -->
 	  </div>
 	  <div class="toggle-switch"><div class="fa fa-gear fa-spin"></div></div>
@@ -406,11 +406,11 @@
   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nombre d’États ou territoires sous embargo </p> <br>
   </p>
   <p>
-     <h1><b>&nbsp;&nbsp;5</b></h1>    
+      <i><h1><b>&nbsp;&nbsp;5</b></h1> </i>   
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nombre d’entités non-étatiques sous embargos <br>   
   </p>
     <p>
-      <h1><b>&nbsp;&nbsp;6</b></h1>  
+        <i> <h1><b>&nbsp;&nbsp;6</b></h1> </i> 
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nombre d’organisations mettant en œuvre un embargo <br>
  {% else %}
      
@@ -419,12 +419,12 @@
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number of States or territories currently under arms embargo
   </p>
    <p>
-     <h1><b>&nbsp;&nbsp;5</b></h1>    
+       <i>  <h1><b>&nbsp;&nbsp;5</b></h1></i>    
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Number of non-state entities currently under arms embargo   
   </p>
    
   <p>
-      <h1><b>&nbsp;&nbsp;&nbsp;6</b></h1>  
+      <i><h1><b>&nbsp;&nbsp;&nbsp;6</b></h1> </i>
    
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Number of multilateral organizations implementing arms embargoes 
   </p>
@@ -590,7 +590,7 @@
        
   <p><i>
   Cette base de données est réalisée dans le cadre de la « Cellule de veille sur l’évolution de la production 
-  et des transferts d’armes en Belgique, en Europe et dans le monde », financée par la Région wallonne, 
+  et des transferts d’armes en Belgique, en Europe et dans le monde», financée par la Région wallonne, 
   et bénéficie du soutien financier de l’UNSCAR. Les informations contenues dans cette base de données 
   relèvent de la seule responsabilité du GRIP.
   Le GRIP, la Région wallonne et l’UNSCAR ne peuvent être tenus responsables 
@@ -628,8 +628,46 @@
         </div>
     </div>
         {% endif  %}
-  <div class="footer-ribbon">
+  <div class="footer-ribbon"><!-- 
       <div style="background-color: #eee9e9;" class="panel-body">
+    
+         <div class="row">
+         <p style="color: #246F8C;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contactez le GRIP</p>
+         <a href="https://www.grip.org/fr/" style="color: #246F8C;">   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visitez le site du Grip</a>
+         </div>
+        
+      <div class="row">
+       
+          
+        <div class="col-lg-12">
+            <div class="col-lg-4"></div> 
+  
+        
+     
+        <div class="col-lg-6">
+            <p style="color: #246F8C; font-size: 105%"> <br> © Grip   Groupe de recherche et d'information sur la paix et la sécurité</p>
+            
+            <div class="social-media">
+               
+           
+           
+          </div>
+        </div>
+        
+         <div class="col-lg-2">
+          
+             </br>
+             <br/>
+
+ 
+       
+        </div>
+        
+        </div>
+      </div>
+    
+    </div>
+      <div style="background-color:#eee9e9;" class="panel-body">
     
          <div class="row">
          <!-- <p style="color: #246F8C;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contactez le GRIP</p>
@@ -640,41 +678,15 @@
        
           
         <div class="col-lg-12">
-            <div class="col-lg-3"></div> 
+           <div class="col-lg-5"></div> 
   
         
-     
-        <div class="col-lg-5">
-       <p style="color: #246F8C;"class="copyright"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;© Grip {{ "now"|date("Y") }}  Groupe de recherche et d'information sur la paix et la sécurité</p>
-
-        </div>
+  
          {% if show_social_icon %}
-        <div class="col-lg-1">
-            
-            
-          <div class="social-media">
-               
-            {% if facebook_url %}
-              <a href="{{ facebook_url }}" class="icon-facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
-            {% endif %}
-            
-            {% if twitter_url %}
-              <a href="{{ twitter_url }}" class="icon-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
-            {% endif %}
-            {% if linkedin_url %}
-              <a href="{{ linkedin_url }}" class="icon-linkedin" data-toggle="tooltip" data-placement="bottom" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-            {% endif %}
-           
-          </div>
-        </div>
+    
         {% endif %}
-         <div class="col-lg-3">
-            
-
-      {{ page.footer_menu }}
-       
-        </div>
-        
+    
+            <div class="col-lg-5"></div> 
         </div>
       </div>
     
@@ -699,13 +711,13 @@
          <div id="toTop" class="col-md-12">
           <a class="scrollUp"><i class="fa fa-angle-up"></i></a>
          </div>
-        </div><!--
+        </div>
         <div class="row">
             
         <div class="col-md-12 copy_credit">
         <p class="copyright">© Grip {{ "now"|date("Y") }} - Groupe de recherche et d'information sur la paix et la sécurité</p>
         <div class="col-md-12 ">
-           <!--<div class="social-media">
+           <div class="social-media">
             
               <a href="https://www.facebook.com/GRIP.1979"class="icon-facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
             
@@ -713,10 +725,10 @@
            
               <a href="https://www.linkedin.com/company/grip" class="icon-linkedin" data-toggle="tooltip" data-placement="bottom" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
          
-           
-         
-        </div>-->
-            </div>
+           </div>
+        </div>
+        
+         {{ page.footer_menu }}
        
         {% if show_credit_link %}
           <p class="credit">Theme for <a href="https://www.drupal.org/8" target="_blank">Drupal 8</a></p>
