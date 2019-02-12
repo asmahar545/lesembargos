@@ -768,24 +768,26 @@ $settings['entity_update_batch_size'] = 50;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
+
+
 $databases['default']['default'] = array (
-  'database' => 'drupal',
-  'username' => 'root',
-  'password' => '',
+  'database' => 'grip_embargos',
+  'username' => 'grip_embargo',
+  'password' => 'paix4023embargo',
   'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
+  'host' => 'ftp.alwaysdata.com',
+  'port' => '21',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
-//base de donnée de test
+/*
 $databases['default']['replica'][] = array(
   'driver' => 'mysql',
   'database' => 'drupal',
   'username' => 'root',
   'password' => '',
   'host' => 'localhost',
-);
+);*/
 
 
 
