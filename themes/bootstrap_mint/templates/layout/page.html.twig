@@ -68,9 +68,11 @@
 
 <!-- Header and Navbar -->
 <header class="main-header">
+     
 <!-- Sliding Header Widget -->
 {% if is_front %}
   {% if page.sliding_header_one or page.sliding_header_two %}
+      
     <div class="slidewidget">
 	<div class="wrapper">
       <!-- start: Container -->
@@ -78,6 +80,7 @@
         
         <div class="row">
           <div id="sliding-header-wrap">
+              
           <!-- Slide first region -->
           
           {% if page.sliding_header_one %}
@@ -118,6 +121,7 @@
           <span class="icon-bar"></span>
           
         </button>
+          {# mon commentaire #}
         {% if page.header %}
           {{ page.header }}
         {% endif %}
@@ -130,6 +134,7 @@
         {% endif %}      
       </div>
       <!--End Navigation -->
+      
 
       </div>
     </div>
@@ -142,7 +147,8 @@
     <div class="container slideshow">
       <div class="row">
         <div class="col-md-12">
-            {{ page.slideshow }}
+            <img  src="http://embargo.grip.org/ban1.jpg"HEIGHT=10000    >
+          {# {{ page.slideshow }}   #}
         </div>
       </div>
     </div>
@@ -315,7 +321,7 @@
             
         </div>
         
-         <div class="col-md-4">
+   <div class="col-md-4">
   <span class=" fa-stack fa-5x has-badge" data-count="3">
     <i class=" fa fa-circle fa-stack-2x"></i>
     <i class="p3 fa fa-database fa-stack-1x fa-inverse" data-count="5"></i>
@@ -412,6 +418,8 @@
     <p>
         <i> <h1><b>&nbsp;&nbsp;6</b></h1> </i> 
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nombre d’organisations mettant en œuvre un embargo <br>
+       <br>
+    <br>
  {% else %}
      
   <p>
@@ -428,13 +436,20 @@
    
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Number of multilateral organizations implementing arms embargoes 
   </p>
+    <br>
+    <br>
    {% endif %}  
 </div>
 <div class="col-lg-5">
     <br>
     <br>
-  <div id="imageembargo"> </div>
-  
+     <img src="http://embargo.grip.org/pays.jpg" >
+ <!-- <div id="imageembargo"> </div>*-->
+    <br>
+    <br>
+      <br>
+    <br>
+    
 </div>
 
 </div>
@@ -611,18 +626,20 @@
   {% endif %}
         </div>
             <div style="color: #ffffff;" class="col-lg-1">
-               <div id="communautefr"></div> 
+               <!--<div id="communautefr"></div> -->
+               <img src="http://embargo.grip.org/logo_mini.png" >
      
      
        </div>
             <div style="color: #ffffff;" class="col-lg-1">
                 
-     <div id="communautewalonnie"> </div>
-     
+     <!--<div id="communautewalonnie"> </div>-->
+     <img src="http://embargo.grip.org/logowallonie.png" >
        </div>
           <div style="color: #ffffff;" class="col-lg-1">
                 
-     <div id="unscarlogo"> </div>
+    <!-- <div id="unscarlogo"> </div>-->
+     <img src="http://embargo.grip.org/unscar_logo.png" >
      
        </div>
         </div>
@@ -727,7 +744,7 @@
          
            </div>
         </div>
-        <img src="https://www.chea.org/sites/default/files/2018-04/Institutions1_0.jpg" >
+       
         
         
         
