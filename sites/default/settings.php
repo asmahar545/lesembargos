@@ -769,14 +769,13 @@ $settings['entity_update_batch_size'] = 50;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 
-
 $databases['default']['default'] = array (
-  'database' => 'grip_embargos',
-  'username' => 'grip_embargo',
-  'password' => 'paix4023embargo',
+  'database' => 'drupal',
+  'username' => 'root',
+  'password' => '',
   'prefix' => '',
-  'host' => 'ftp.alwaysdata.com',
-  'port' => '21',
+  'host' => 'localhost',
+  'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
